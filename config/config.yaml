@@ -38,11 +38,12 @@ lidar:
         firetimes_path: "Your firetime file path"           # The path of firetimes file
 
       serial_type:
-        rs485_com: "/dev/ttyUSB0"  # if using JT16, Port to receive the point cloud
+        #rs485_com: "/dev/ttyUSB2"  # if using JT16, Port to receive the point cloud
+        rs485_com: "/dev/hesai_lidar"  # if using JT16, Port to receive the point cloud
         rs232_com: "Your serial port name for sending cmd"            # if using JT16, Port to send cmd
         point_cloud_baudrate: 3000000
         correction_save_path: ""                                      # turn on when you need to store angle calibration files(from lidar)
-        correction_file_path: "/home/taocheng/deerbaby_ws/src/HesaiLidar_ROS_2.0/config/JT16_sample_angle.csv"             # The path of correction file
+        correction_file_path: "/home/silverlife/deerbaby_ws/src/HesaiLidar_ROS_2.0/config/JT16_sample_angle.csv"             # The path of correction file
 
       # public module
       use_timestamp_type: 1                 # 0 use point cloud timestamp; 1 use receive timestamp
